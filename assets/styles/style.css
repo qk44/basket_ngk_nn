@@ -67,6 +67,7 @@ body{
     display: flex;
     gap: 50px;
     justify-content: center;
+    margin: 0 auto;
     
 }
 
