@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    
+
+}
+
+
+.section-auth{
+    background-image:linear-gradient(#3333332f, #1313135d), url('../imgs/fonn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    
+    
+}
+
+.section-auth .container{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background-color: rgba(4, 0, 29, 0.63);
+    padding: 40px;
+    z-index: -999999;
+}
+
+
+.section-auth .container .auth{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-auth .container .auth .auth-p{
+    color: white;
+    font-size: 2rem;
+}
+
+.section-auth .container .auth .line{
+    width: 230px;
+    height: 2px;
+    background: rgba(116, 0, 211, 0.664);
+    margin-top: 4px;
+}
+
+
+
+.section-auth .container .log-pass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+}
+.section-auth .container .log-pass .password input::placeholder {
+    color: white;
+    font-size: 1.2em;
+}
+
+.section-auth .container .log-pass .login input::placeholder {
+    color: white;
+    font-size: 1.2em;
+}
+
+.section-auth .container .log-pass .login input{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 420px;
+}
+
+.section-auth .container .log-pass .password input{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 390px;
+}
+
+.section-auth .container .log-pass .login .line{
+    width: 420px;
+    height: 1px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+.section-auth .container .log-pass .password .line{
+    width: 420px;
+    height: 1px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+.section-auth .container .log-pass .password{
+    color: white;
+} 
+
+.section-auth .container .log-pass .password .pass-v{
+    display: flex;
+} 
+
+.section-auth .container .z-pass{
+    display: flex;
+    margin-top: 50px;
+}
+.demoToggleCheckbox {
+    display: none;
+}
+.demoToggleCheckbox + label {
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+    background-color: rgba(116, 0, 211, 0.205);
+    border-radius: 17px;
+    position: relative;
+    cursor: pointer;
+}
+.demoToggleCheckbox + label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+.demoToggleCheckbox:checked + label {
+    background-color: rgba(116, 0, 211, 0.459);
+}
+.demoToggleCheckbox:checked + label:after {
+    transform: translateX(22px);
+}
+
+.section-auth .container .z-pass p{
+    color: white;
+    padding-left: 20px;
+}
+
+.section-auth .container .next{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    gap: 26px;
+}
+
+.section-auth .container .next button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: rgba(116, 0, 211, 0.329);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.section-auth .container .next p{
+    color: white;
+}
+
+.section-auth .container .next button:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+
+@media (max-width: 480px) {
+    body{
+
+        overflow-x: hidden;
+    }
+    
+    
+    .section-auth{
+        background-image:linear-gradient(#3333332f, #1313135d), url('../imgs/fonn.jpg');
+        width: 480px;
+    }
+    .section-auth .container{
+        width:  360px;
+    }
+    .section-auth .container .log-pass .password .line{
+        width: 280px;
+    }
+    .section-auth .container .log-pass .login .line{
+        width: 280px;
+    }
+}
