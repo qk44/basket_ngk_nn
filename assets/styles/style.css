@@ -52,6 +52,16 @@
         display: flex;
         flex-direction: column;
     }
+    .section-main .container .cards .card .card-img{
+        font-size: 0.8rem;
+    }
+    .section-main .container .cards .card{
+        width: 280px;
+    }
+    .section-main .container .cards .card .card-img{
+    width: 280px;
+    height: 280px;
+    }
 }
 
 
