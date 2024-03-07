@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>BasketNGK</title>
+    <link rel="stylesheet" href="./assets/styles/style-auth.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
 </head>
 <body>
-    <div class="section section-main">
+    <div class="section-auth">
         <div class="container">
-            <div class="cards">
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="card-text">
-                        <p>ФИО: Казаков Илья Юрьевич</p>
-                        <p>Возраст: 17 лет</p>
-                        <p>Рост: 186</p>
-                        <p>Номер: 01</p>
-                        
-                    </div>
+            <div class="auth">
+                <p class="auth-p">Авторизация</p>
+                <div class="line"></div>
+            </div>
+            <div class="log-pass">
+                <div class="login">
+                    <input class="inp-log-pass" placeholder="Email:">
+                    
+                    <div class="line"></div>
                 </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="card-text">
-                        <p>ФИО: Демина Анастасия #######</p>
-                        <p>Возраст: 17 лет</p>
-                        <p>Рост: 160+</p>
-                        <p>Номер: 01</p>
+                <div class="password">
+                    <div class="pass-v">
+                        <input  placeholder="Пароль:">
+                        <span class="material-symbols-outlined">
+                            visibility
+                            </span>
                     </div>
+                    <div class="line"></div>
                 </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="card-text">
-                        <p>ФИО: ####### ######### #######</p>
-                        <p>Возраст: ## лет</p>
-                        <p>Рост: 100</p>
-                        <p>Номер: 01</p>
-                    </div>
-                </div>
+            </div>
+            <div class="z-pass">
+                <input class="demoToggleCheckbox" type="checkbox" name="passw" id="passw">
+                <label for="passw"></label>
+                <p>Запомнить пароль</p>
+            </div>
+            <div class="next">
+                <button onclick="document.location='./main.html'">Войти</button>
+                <p>Забыли пароль?</p>
+                
             </div>
         </div>
     </div>
