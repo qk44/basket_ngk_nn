@@ -28,6 +28,7 @@
 @media (max-width: 768px) {
     .container{
         width:  740px;
+    }
     .cards{
         display: flex;
         flex-direction: column;
@@ -37,10 +38,19 @@
     .container{
         width:  98%;
     }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 @media (max-width: 480px) {
     .container{
         width:  98%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
     }
 }
 
